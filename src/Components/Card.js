@@ -5,7 +5,7 @@ export default function Card({ details, image }) {
         <!-- set class card-body on inner div after img --> // * refined spacing of header info a w/ proper spacing
         <!-- Set class card-title on h5 -->
         <!-- Set class card-text on p tag -->
-        <!-- Set classes btn btn-primary on a tag --> // * highlights the gift it line under flower
+        <!-- Set classes btn btn-primary on a tag --> // * makes a button feature to click for the gift it line under flower
         <!-- ************************** --> */
 
   return (
@@ -22,7 +22,7 @@ export default function Card({ details, image }) {
           </span>
         </p>
         <br />
-        <a className="btn-primary">Gift it</a>
+        <a className="btn btn-primary">Gift it</a>
       </div>
     </div>
   );

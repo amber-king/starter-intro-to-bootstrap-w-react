@@ -1,13 +1,27 @@
 export default function Table() {
   // <!-- ************************** -->
   // <!-- Best Sellers table -->
-  // <!-- set class display-5 on h3 -->
-  // <!-- Set classes table table-striped table-hover text-center on table -->
+  // <!-- set class display-5 on h3 --> // * increased font size header info
+  // <!-- Set classes table table-striped table-hover text-center on table --> 
+
+  // * ^--- makes a cleaner grid table of info that when hovered over chage color 
+  // *Notes from the reading of the diff features ---v 
+  //  Let's add another class, table-striped, to allow for better division between rows.
+
+  // <table class="table table-striped"></table>
+  // If we want to center the text elements in our table, we could write our CSS in the index.css file. But it is better to use Bootstrap whenever possible. Bootstrap has a class called text-center that will center our text. This will allow for more consistent styling and less unexpected behaviors with our styles.
+
+  // <table class="table table-striped text-center"></table>
+  // Finally, we can imagine that each row would be a link to an individual view of each tree with more information and the ability to purchase it. We can add a hover effect to assist our users in recognizing that the table would be interactive.
+
+  // <table class="table table-striped text-center table-hover"></table>
+
   // <!-- ************************** -->
   return (
     <>
-      <h3 className="">Best Sellers</h3>
-      <table className="">
+      <h3 className="display-5">Best Sellers</h3>
+      <table className="table table-striped text-center table-hover">
+
         <thead>
           <tr>
             <th scope="col">#</th>

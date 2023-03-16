@@ -4,17 +4,20 @@
 // <!-- ************************** -->
 export default function NewsletterForm() {
   return (
-    <div className="">
+    <div className="container">
       <h4>Sign up for our newsletter</h4>
       <form>
         {/* <!-- ************************** -->
             <!-- divs for text inputs -->
             <!-- Set class mb-3 on outer div -->
             <!-- Set class mb-3 on inner div div -->
+            // * Notes from the reading on these settings
+            // mb is short for margin-bottom. There are others like mt for margin-top, ml - left, mr -right, mx - left and right (x-axis), my - top and bottom (y-axis).
+// In mb-3, The value is a multiplier. So if the default margin is 1em, this will multiply the spacer value by 1.
             <!-- ************************** --> */}
 
-        <div className="">
-          <div className="">
+        <div className="mb-3">
+          <div className="mb-3">
             {/* <!-- ************************** -->
                 <!-- Labels & for Text inputs -->
                 <!-- Set class form-label on label -->
