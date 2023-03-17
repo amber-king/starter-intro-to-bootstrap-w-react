@@ -55,9 +55,9 @@ export default function NewsletterForm() {
             <!-- Set class form-check-label on label -->
             <!-- ************************** --> */}
 
-        <div className="">
-          <input type="checkbox" className="form-label" id="exampleCheck1" />
-          <label className="" htmlFor="exampleCheck1">
+        <div className="mb-3 form-check">
+          <input type="checkbox" className="form-check-input" id="exampleCheck1" />
+          <label className="form -label" htmlFor="exampleCheck1">
             Send me promo codes daily!
           </label>
         </div>
