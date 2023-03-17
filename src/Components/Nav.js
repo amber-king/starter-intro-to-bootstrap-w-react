@@ -5,11 +5,12 @@
 
 export default function Nav() {
   return (
-    <nav className="">
-      <div className="">
-        <a className="">Rosier</a>
+    <nav className="navbar navbar-expand-lg navbar-light bg-light">
+      <div className="container-fluid">
+        {/* ^ ---- makes the a tag Rosier a link to reset page  */}
+        <a className="navbar-brand" href="#">Rosier</a>
         <button
-          className=""
+          className="navbar-toggler"
           type="button"
           data-bs-toggle="collapse"
           data-bs-target="#navbarSupportedContent"
@@ -17,21 +18,22 @@ export default function Nav() {
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
-          <span className=""></span>
+          <span className="navbar-toggler-icon"></span>
+          {/* ^ ---makes hambuger menu for more select opts. */}
         </button>
-        <div className="" id="navbarSupportedContent">
-          <ul className="">
-            <li className="">
-              <a className="" aria-current="page">
+        <div className="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul className="navbar-nav mr-auto">
+            <li className="nav-item ">
+              <a className="nav-link active" aria-current="page" href="#">
                 Home
               </a>
             </li>
-            <li className="">
-              <a className="">Featured</a>
+            <li className="nav-item">
+              <a className="nav-link" href="#">Featured</a>
             </li>
-            <li className="">
+            <li className="nav-item dropdown">
               <a
-                className=""
+                className="nav-link dropdown-toggle"
                 id="navbarDropdown"
                 role="button"
                 data-bs-toggle="dropdown"
@@ -39,30 +41,30 @@ export default function Nav() {
               >
                 Learn More
               </a>
-              <ul className="" aria-labelledby="navbarDropdown">
+              <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
                 <li>
-                  <a className="">About</a>
+                  <a className="dropdown-item" href="#">About</a>
                 </li>
                 <li>
-                  <a className="">Contact</a>
+                  <a className="dropdown-item" href="#" >Contact</a>
                 </li>
                 <li>
-                  <hr className="" />
+                  <hr className="dropdown-divider"/>
                 </li>
                 <li>
-                  <a className="">Surprise me!</a>
+                  <a className="dropdown-item" href="#">Surprise me!</a>
                 </li>
               </ul>
             </li>
           </ul>
-          <form className="">
+          <form className="d-flex">
             <input
-              className=""
+              className="form-control"
               type="search"
               placeholder="Search"
               aria-label="Search"
             />
-            <button className="" type="submit">
+            <button className="btn btn-primary" type="submit">
               Search
             </button>
           </form>

@@ -11,10 +11,12 @@
   color: dimgrey;
   text-shadow: 2px 2px 2px gainsboro;
   font-size: 3em;
+  font-family: fantasy;
 }
 
 nav {
-  display: none;
+  display: grid;
+  font-family: cursive;
 }
 
 img {
@@ -24,4 +26,12 @@ img {
 form {
   padding: 1em;
   padding-bottom: 2em;
+  font-family: cursive;
+}
+
+.card-text {
+  /* white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis; */
+  font-family: fantasy;
 }
