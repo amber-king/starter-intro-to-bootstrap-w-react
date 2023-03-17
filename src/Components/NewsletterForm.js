@@ -14,6 +14,7 @@ export default function NewsletterForm() {
             // * Notes from the reading on these settings
             // mb is short for margin-bottom. There are others like mt for margin-top, ml - left, mr -right, mx - left and right (x-axis), my - top and bottom (y-axis).
 // In mb-3, The value is a multiplier. So if the default margin is 1em, this will multiply the spacer value by 1.
+// https://github.com/9-3-pursuit/unit-react/tree/main/intro-to-bootstrap-w-react/lesson-notes#newsletter-form
             <!-- ************************** --> */}
 
         <div className="mb-3">
@@ -23,22 +24,22 @@ export default function NewsletterForm() {
                 <!-- Set class form-label on label -->
                 <!-- Set class form-control on input -->
                 <!-- ************************** --> */}
-            <label htmlFor="name" className="">
+            <label htmlFor="name" className="form-label">
               Name
             </label>
-            <input type="text" className="" id="name" />
+            <input type="text" className="form-control" id="name" />
           </div>
           {/* <!-- ************************** -->
               <!-- Labels & for Text inputs -->
               <!-- Set class form-label on label -->
               <!-- Set class form-control on div -->
               <!-- ************************** --> */}
-          <label htmlFor="exampleInputEmail1" className="">
+          <label htmlFor="exampleInputEmail1" className="form-label">
             Email address
           </label>
           <input
             type="email"
-            className=""
+            className="form-control"
             id="exampleInputEmail1"
             aria-describedby="emailHelp"
           />
@@ -55,7 +56,7 @@ export default function NewsletterForm() {
             <!-- ************************** --> */}
 
         <div className="">
-          <input type="checkbox" className="" id="exampleCheck1" />
+          <input type="checkbox" className="form-label" id="exampleCheck1" />
           <label className="" htmlFor="exampleCheck1">
             Send me promo codes daily!
           </label>
